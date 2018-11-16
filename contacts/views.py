@@ -27,13 +27,13 @@ def contacts(request):
 
         contacts.save()
 
-        send_mail(
-            'Property Inquiry for ' + listing,
-            name + ' made an inquiry for ' + listing + '. Sign into the admin panel for more information.',
-            'ocastroa@ucsc.edu',
-            [realtor_email, 'oscarcastro_777@hotmail.com'],
-            fail_silently=False,
-        )
+        # send_mail(
+        #     'Property Inquiry for ' + listing,
+        #     name + ' made an inquiry for ' + listing + '. Sign into the admin panel for more information.',
+        #     '',
+        #     [realtor_email, ''],
+        #     fail_silently=False,
+        # )
 
         messages.success(request, 'Your request has been submitted! A realtor will get back to you shortly')
         return redirect('/listings/' + listing_id)

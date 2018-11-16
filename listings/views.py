@@ -37,7 +37,7 @@ def search(request):
     if 'city' in request.GET:
         city = request.GET['city']
         if city:
-            queryset_list = queryset_list.filter(city__iexact=city) #iexact is case insensitive, unlike exact
+            queryset_list = queryset_list.filter(city__iexact=city) #iexact is case insensitive
 
     # State
     if 'state' in request.GET:
