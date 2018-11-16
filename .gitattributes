@@ -1,1 +1,2 @@
-DjangoProject/btre/static/* linguist-vendored
+*.css linguist-vendored
+*.jss linguist-vendored
